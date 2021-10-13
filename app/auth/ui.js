@@ -44,6 +44,26 @@ const signInFailure = function (error) {
   console.error(error)
 }
 
+const changePasswordSuccess = function (responseData) {
+  $('#ttt-display').text('Password change was successful!')
+
+  $('ttt-display').removeClass()
+  $('ttt-display').addClass('text-success')
+
+  $('form').trigger('reset')
+
+  console.log('responseData is', responseData)
+}
+
+const changePasswordFailure = function (error) {
+  $('error-message').text('Change password attempt has failed. Please try again.')
+
+  $('error-message').removeClass()
+  $('error-message').addClass('text-danger')
+
+  console.error(error)
+}
+
 const signOutSuccess = function () {
   $('#ttt-display').text('Sign out was successful!')
   $('#ttt-display').addClass('text-success')
@@ -68,6 +88,8 @@ module.exports = {
   signUpFailure,
   signInSuccess,
   signInFailure,
+  changePasswordSuccess,
+  changePasswordFailure,
   signOutSuccess,
   signOutFailure
 }

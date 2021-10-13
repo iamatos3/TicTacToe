@@ -22,6 +22,7 @@
           <legend>Sign Up</legend>
           <input type="email" name="credentials[email]" placeholder="Email" required>
           <input type="password" name="credentials[password]" placeholder="Password" required>
+          <input type="password" name="credentials[password_confirmation]" placeholder="Password Confirmation" required>
 
           <button class="btn btn-primary">Sign Up</button>
         </fieldset>
@@ -34,15 +35,29 @@
           <input type="email" name="credentials[email]" placeholder="Email" required>
           <input type="password" name="credentials[password]" placeholder="Password" required>
 
+
           <button class="btn btn-primary">Sign In</button>
         </fieldset>
       </form>
 
+      <!-- Change Password -->
+      <section id="after-sign-in">
+
+        <form id="change-password" class="border">
+          <fieldset>
+            <legend>Change Password</legend>
+            <input type="password" name="passwords[old]" placeholder="Current Password" required>
+            <input type="password" name="passwords[new]" placeholder="New Password" required>
+
+            <button class="btn btn-primary">Change Password</button>
+          </fieldset>
+        </form>
 
       <!-- Sign Out-->
         <button id="sign-out" class="btn btn-danger">
           Sign Out
         </button>
+      </section>
 
           <!-- User Feedback -->
           <section>
@@ -50,5 +65,25 @@
             <div id="ttt-display"></div>
           </section>
      </section>
+
+     <!-- Game Grid -->
+      <div class="container"></div>
+        <div class="row">
+          <div class="col-4 col-lg-4 box">box1</div>
+          <div class="col-4 col-lg-4 box">box2</div>
+          <div class="col-4 col-lg-4 box">box3</div>
+          <div class="col-4 col-lg-4 box">box4</div>
+          <div class="col-4 col-lg-4 box">box5</div>
+          <div class="col-4 col-lg-4 box">box6</div>
+        </div>
+
+        <div class="row">
+          <div class="col-4 col-lg-4 box">box7</div>
+          <div class="col-4 col-lg-4 box">box8</div>
+          <div class="col-4 col-lg-4 box">box9</div>
+        </div>
+
+
+      </div>
     </body>
 </html>
