@@ -16,7 +16,7 @@ const onSignUp = function (event) {
     .catch(ui.signUpFailure)
 }
 
-const onSignIn = function (event) {
+function onSignIn (event) {
   event.preventDefault()
 
   const form = event.target

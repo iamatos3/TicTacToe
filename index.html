@@ -1,28 +1,38 @@
 <!DOCTYPE html>
 <html>
-    <head>
-      <title>TIC TAC TOE</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <title>TIC TAC TOE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-      <!-- Do not add `link` tags-->
-      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <!-- Do not add `link` tags-->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 
-      <!-- Do not add `script` tags-->
-      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
-      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
-    </head>
+    <!-- Do not add `script` tags-->
+    <script
+      src="public/vendor.js"
+      type="text/javascript"
+      charset="utf-8"
+      defer
+    ></script>
+    <script
+      src="public/application.js"
+      type="text/javascript"
+      charset="utf-8"
+      defer
+    ></script>
+  </head>
 
-    <body>
-      <h1>Tic Tac Toe</h1>
+  <body>
+    <h1>Tic Tac Toe</h1>
 
-      <section>
+    <section>
       <!-- sign-up form-->
       <form id="sign-up" class="border">
         <fieldset>
           <legend>Sign Up</legend>
-          <input type="email" name="credentials[email]" placeholder="Email" required>
-          <input type="password" name="credentials[password]" placeholder="Password" required>
-          <input type="password" name="credentials[password_confirmation]" placeholder="Password Confirmation" required>
+          <input type="email" name="credentials[email]" placeholder="Email" required/>
+          <input type="password" name="credentials[password]" placeholder="Password" required/>
+          <input type="password" name="credentials[password_confirmation]" placeholder="Password Confirmation" required/>
 
           <button class="btn btn-primary">Sign Up</button>
         </fieldset>
@@ -32,9 +42,18 @@
       <form id="sign-in" class="border">
         <fieldset>
           <legend>Sign In</legend>
-          <input type="email" name="credentials[email]" placeholder="Email" required>
-          <input type="password" name="credentials[password]" placeholder="Password" required>
-
+          <input
+            type="email"
+            name="credentials[email]"
+            placeholder="Email"
+            required
+          />
+          <input
+            type="password"
+            name="credentials[password]"
+            placeholder="Password"
+            required
+          />
 
           <button class="btn btn-primary">Sign In</button>
         </fieldset>
@@ -46,44 +65,49 @@
         <form id="change-password" class="border">
           <fieldset>
             <legend>Change Password</legend>
-            <input type="password" name="passwords[old]" placeholder="Current Password" required>
-            <input type="password" name="passwords[new]" placeholder="New Password" required>
+            <input
+              type="password"
+              name="passwords[old]"
+              placeholder="Current Password"
+              required
+            />
+            <input
+              type="password"
+              name="passwords[new]"
+              placeholder="New Password"
+              required
+            />
 
             <button class="btn btn-primary">Change Password</button>
           </fieldset>
         </form>
 
-      <!-- Sign Out-->
-        <button id="sign-out" class="btn btn-danger">
-          Sign Out
-        </button>
+        <!-- Sign Out-->
+        <button id="sign-out" class="btn btn-danger">Sign Out</button>
       </section>
 
-          <!-- User Feedback -->
-          <section>
-            <div id="error-message"></div>
-            <div id="ttt-display"></div>
-          </section>
-     </section>
+      <!-- User Feedback -->
+      <section>
+        <div id="error-message"></div>
+        <div id="ttt-display"></div>
+      </section>
+    </section>
 
-     <!-- Game Grid -->
-      <div class="container"></div>
-        <div class="row">
-          <div class="col-4 col-lg-4 box">box1</div>
-          <div class="col-4 col-lg-4 box">box2</div>
-          <div class="col-4 col-lg-4 box">box3</div>
-          <div class="col-4 col-lg-4 box">box4</div>
-          <div class="col-4 col-lg-4 box">box5</div>
-          <div class="col-4 col-lg-4 box">box6</div>
-        </div>
+    <!-- Game Grid -->
+    <section class="container">
+      <div class="row h-100 board">
+        <div class="col-4 box"></div>
+        <div class="col-4 box"></div>
+        <div class="col-4 box"></div>
 
-        <div class="row">
-          <div class="col-4 col-lg-4 box">box7</div>
-          <div class="col-4 col-lg-4 box">box8</div>
-          <div class="col-4 col-lg-4 box">box9</div>
-        </div>
+        <div class="col-4 box"></div>
+        <div class="col-4 box"></div>
+        <div class="col-4 box"></div>
 
-
+        <div class="col-4 box"></div>
+        <div class="col-4 box"></div>
+        <div class="col-4 box"></div>
       </div>
-    </body>
+    </section>
+  </body>
 </html>

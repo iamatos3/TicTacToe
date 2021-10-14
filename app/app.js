@@ -6,8 +6,25 @@ const authEvents = require('./auth/events')
 
 $(() => {
   // your JS code goes here
+
+  // Authorization Events
   $('#sign-up').on('submit', authEvents.onSignUp)
   $('#sign-in').on('submit', authEvents.onSignIn)
   $('#change-password').on('submit', authEvents.onChangePassword)
   $('#sign-out').on('click', authEvents.onSignOut)
+
+  // Game Grid Events
+  let currentPlayer = 'x'
+
+  const onBoxClick = (event) => {
+    console.log('click')
+
+    const box = $(event.target)
+
+    box.css('background', 'transparent')
+    box.text(currentPlayer)
+
+    currentPlayer = currentPlayer === 'O' ? 'X' : 'O'
+  }
+  $('.box').on('click', onBoxClick)
 })
