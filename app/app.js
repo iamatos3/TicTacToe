@@ -14,7 +14,7 @@ $(() => {
   $('#sign-out').on('click', authEvents.onSignOut)
 
   // Game Grid Events
-  let currentPlayer = 'x'
+  let currentPlayer = 'X'
 
   const onBoxClick = (event) => {
     console.log('click')
