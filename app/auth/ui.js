@@ -7,6 +7,7 @@ const signUpSuccess = function (responseData) {
   $('#ttt-display').addClass('text-success')
 
   $('form').trigger('reset')
+
   console.log('responseData is', responseData)
 }
 
@@ -52,6 +53,8 @@ const changePasswordSuccess = function (responseData) {
 
   $('form').trigger('reset')
 
+  $('#after-sign-in').hide()
+
   console.log('responseData is', responseData)
 }
 
@@ -70,8 +73,12 @@ const signOutSuccess = function () {
 
   $('form').trigger('reset')
 
-  $('#before-sign-in').show()
-  $('#after-sign-in').hide()
+  $('#before-sign-in').hide()
+  $('#sign-out-button').hide()
+  $('#after-sign-in').show()
+  $('#new-game').hide()
+  $('#game-grid').hide()
+  $('#password-hide').hide()
 }
 
 const signOutFailure = function (error) {
@@ -83,6 +90,22 @@ const signOutFailure = function (error) {
   console.error(error)
 }
 
+const onNewGameSuccess = (responseData) => {
+  $('#ttt-display').text('A new game has begun!')
+  $('#ttt-display').addClass('text-success')
+
+  $('form').trigger('reset')
+
+  console.log('responseData is', responseData)
+}
+
+const onNewGameFailure = () => {
+  $('#error-message').text('Sorry! Something went wrong, please try again.')
+
+  $('#error-message').removeClass()
+  $('#error-message').addClass('text-danger')
+}
+
 module.exports = {
   signUpSuccess,
   signUpFailure,
@@ -91,5 +114,7 @@ module.exports = {
   changePasswordSuccess,
   changePasswordFailure,
   signOutSuccess,
-  signOutFailure
+  signOutFailure,
+  onNewGameSuccess,
+  onNewGameFailure
 }

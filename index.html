@@ -25,7 +25,7 @@
   <body>
     <h1>Tic Tac Toe</h1>
 
-    <section>
+    <section id="before-sign-in">
       <!-- sign-up form-->
       <form id="sign-up" class="border">
         <fieldset>
@@ -42,26 +42,17 @@
       <form id="sign-in" class="border">
         <fieldset>
           <legend>Sign In</legend>
-          <input
-            type="email"
-            name="credentials[email]"
-            placeholder="Email"
-            required
-          />
-          <input
-            type="password"
-            name="credentials[password]"
-            placeholder="Password"
-            required
-          />
+          <input type="email" name="credentials[email]" placeholder="Email" required/>
+          <input type="password" name="credentials[password]" placeholder="Password" required/>
 
           <button class="btn btn-primary">Sign In</button>
         </fieldset>
       </form>
+    </section>
 
       <!-- Change Password -->
       <section id="after-sign-in">
-
+       <div id="password-hide">
         <form id="change-password" class="border">
           <fieldset>
             <legend>Change Password</legend>
@@ -81,20 +72,23 @@
             <button class="btn btn-primary">Change Password</button>
           </fieldset>
         </form>
-
+       </div>
         <!-- Sign Out-->
-        <button id="sign-out" class="btn btn-danger">Sign Out</button>
-      </section>
+        <section id="sign-out-button">
+          <button id="sign-out" class="btn btn-danger">Sign Out</button>
+        </section>
 
-      <!-- User Feedback -->
-      <section>
-        <div id="error-message"></div>
-        <div id="ttt-display"></div>
-      </section>
-    </section>
+        <!-- User Feedback -->
+        <section>
+          <div id="error-message"></div>
+          <div id="ttt-display"></div>
+        </section>
+    <hr>
+        <!-- New Game -->
+      <button id="new-game" class="btn btn-success">New Game</button>
 
     <!-- Game Grid -->
-    <section class="container">
+    <section id="game-grid" class="container">
       <div class="row h-100 board">
         <div class="col-4 box"></div>
         <div class="col-4 box"></div>
@@ -109,5 +103,7 @@
         <div class="col-4 box"></div>
       </div>
     </section>
+  </section>
+
   </body>
 </html>
