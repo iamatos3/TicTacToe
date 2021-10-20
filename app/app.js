@@ -21,6 +21,7 @@ $(() => {
   store.gameBoard = ["", "", "", "", "", "", "", "", ""]
   store.endGame = false
 
+  let currentPlayer = 'X'
 
   const onBoxClick = (event) => {
     console.log(store.endGame)
