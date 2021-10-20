@@ -4,6 +4,8 @@ const api = require('./api')
 
 const ui = require('./ui')
 
+const store = require('../store')
+
 
 // Authorization Functions
 const onSignUp = function (event) {
@@ -60,73 +62,64 @@ const checkWin = function (currentPlayer, gameBoard) {
       gameBoard[2] === currentPlayer
   ) {
     console.log(currentPlayer, 'Wins!')
-    endGame = true
-    return endGame
+    store.endGame = true
   } else if (
     gameBoard[0] === currentPlayer &&
     gameBoard[3] === currentPlayer &&
     gameBoard[6] === currentPlayer
   ) {
     console.log(currentPlayer, 'Wins!')
-    endGame = true
-    return endGame
+    store.endGame = true
   } else if (
     gameBoard[0] === currentPlayer &&
     gameBoard[4] === currentPlayer &&
     gameBoard[8] === currentPlayer
   ) {
     console.log(currentPlayer, "Wins!")
-    endGame = true
-    return endGame
+    store.endGame = true;
   } else if (
     gameBoard[1] === currentPlayer &&
     gameBoard[4] === currentPlayer &&
     gameBoard[7] === currentPlayer
   ) {
     console.log(currentPlayer, "Wins!")
-    endGame = true
-    return endGame
+    store.endGame = true
   } else if (
     gameBoard[2] === currentPlayer &&
     gameBoard[5] === currentPlayer &&
     gameBoard[8] === currentPlayer
   ) {
     console.log(currentPlayer, "Wins!")
-    endGame = true
-    return endGame
+    store.endGame = true;
   } else if (
     gameBoard[2] === currentPlayer &&
     gameBoard[4] === currentPlayer &&
     gameBoard[6] === currentPlayer
   ) {
     console.log(currentPlayer, "Wins!")
-    endGame = true
+    store.endGame = true;
   } else if (
     gameBoard[3] === currentPlayer &&
     gameBoard[4] === currentPlayer &&
     gameBoard[5] === currentPlayer
   ) {
     console.log(currentPlayer, "Wins!")
-    endGame = true
-    return endGame
+    store.endGame = true;
   } else if (
     gameBoard[6] === currentPlayer &&
     gameBoard[7] === currentPlayer &&
     gameBoard[8] === currentPlayer
   ) {
     console.log(currentPlayer, "Wins!")
-    endGame = true
-    return endGame
+    store.endGame = true
   } else if (
     !gameBoard.includes("")
   ) {
     console.log('The game is a Draw. Play again!')
-    endGame = true
-    return endGame;
+    store.endGame = true
   } else {
     console.log('Game is still in play. Keep going!')
-    endGame = false
-    return endGame
+    store.endGame = false
    }
   }
 

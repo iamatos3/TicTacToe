@@ -5,6 +5,8 @@ const authEvents = require('./auth/events')
 // require('./example')
 const gameEvents = require('./auth/events')
 
+const store = require('./store')
+
 $(() => {
   // your JS code goes here
 
@@ -17,12 +19,12 @@ $(() => {
   // Game Grid Events
   let currentPlayer = 'X'
   const gameBoard = ["", "", "", "", "", "", "", "", ""]
-  let endGame = false
+  store.endGame = false
 
 
   const onBoxClick = (event) => {
-    console.log(endGame)
-   if (!endGame) {
+    console.log(store.endGame)
+   if (!store.endGame) {
     console.log('click')
 
     const box = $(event.target)
@@ -30,7 +32,7 @@ $(() => {
     box.css('background', 'transparent')
     box.text(currentPlayer)
     gameBoard[event.target.id] = currentPlayer
-    endGame = gameEvents.checkWin(currentPlayer, gameBoard, endGame)
+    gameEvents.checkWin(currentPlayer, gameBoard)
 
     currentPlayer = currentPlayer === 'O' ? 'X' : 'O'
     // winnerCheck()
