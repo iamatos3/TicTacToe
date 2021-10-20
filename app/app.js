@@ -17,8 +17,8 @@ $(() => {
   $('#sign-out').on('click', authEvents.onSignOut)
 
   // Game Grid Events
-  let currentPlayer = 'X'
-  const gameBoard = ["", "", "", "", "", "", "", "", ""]
+  store.currentPlayer = 'X'
+  store.gameBoard = ["", "", "", "", "", "", "", "", ""]
   store.endGame = false
 
 
@@ -30,14 +30,14 @@ $(() => {
     const box = $(event.target)
 
     box.css('background', 'transparent')
-    box.text(currentPlayer)
-    gameBoard[event.target.id] = currentPlayer
-    gameEvents.checkWin(currentPlayer, gameBoard)
+    box.text(store.currentPlayer)
+    store.gameBoard[event.target.id] = store.currentPlayer
+    gameEvents.checkWin(store.currentPlayer, store.gameBoard)
 
-    currentPlayer = currentPlayer === 'O' ? 'X' : 'O'
+    store.currentPlayer = store.currentPlayer === 'O' ? 'X' : 'O'
     // winnerCheck()
     // $(this).addClass(currentPlayer)
-    console.log(gameBoard)
+    console.log(store.gameBoard)
   }}
   $('.box').on('click', onBoxClick)
 

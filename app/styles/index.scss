@@ -2,8 +2,15 @@
 $primary: #333d29;
 $secondary: #b6ad90;
 
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+
 #after-sign-in {
   display: none;
+}
+
+#before-sign-in {
+  display: fixed;
 }
 
 .container {
@@ -15,7 +22,7 @@ $secondary: #b6ad90;
   max-width: calc(100vh - 75px);
   max-height: calc(100vh - 75px);
 
-  background: url('https://i.imgur.com/80wFjUd.jpg');
+  background: url('https://englishlive.ef.com/blog/wp-content/uploads/sites/2/2014/06/Don%E2%80%99t-be-a-word-bore-alternative-ways-of-saying-%E2%80%98happy%E2%80%99.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -49,12 +56,35 @@ $secondary: #b6ad90;
   text-shadow: 4px 2px rgba(0, 0, 0, .25);
 
   &:hover {
-    background: cyan;
+    background: cyan!important;
   }
 
   user-select: none;
 }
 
+head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1, h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Oswald', sans-serif;
+}
+
+body {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq42GtTnjzHcVxgr3zQVaqXo4225p3xDsRGA&usqp=CAU');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.ttt-display {
+  display: center;
+}
 // .winning-message {
 //   display: none;
 //   position: fixed;

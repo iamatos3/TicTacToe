@@ -32,6 +32,7 @@ const signInSuccess = function (responseData) {
 
   $('#before-sign-in').hide()
   $('#after-sign-in').show()
+  $('#game-grid').hide()
 
   console.log('responseData is', responseData)
 }
@@ -54,6 +55,7 @@ const changePasswordSuccess = function (responseData) {
   $('form').trigger('reset')
 
   $('#after-sign-in').hide()
+  $('#game-grid').hide()
 
   console.log('responseData is', responseData)
 }
@@ -73,7 +75,7 @@ const signOutSuccess = function () {
 
   $('form').trigger('reset')
 
-  $('#before-sign-in').hide()
+  $('#before-sign-in').show()
   $('#sign-out-button').hide()
   $('#after-sign-in').show()
   $('#new-game').hide()
@@ -93,8 +95,15 @@ const signOutFailure = function (error) {
 const onNewGameSuccess = (responseData) => {
   $('#ttt-display').text('A new game has begun!')
   $('#ttt-display').addClass('text-success')
+  $('#game-grid').show()
 
   $('form').trigger('reset')
+  $('.box').text("")
+  $('.box').css('background', 'white')
+  store.endGame = false
+  store.currentPlayer = 'X'
+  store.gameBoard = ["", "", "", "", "", "", "", "", ""]
+
 
   console.log('responseData is', responseData)
 }
