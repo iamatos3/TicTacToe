@@ -54,6 +54,38 @@ $secondary: #b6ad90;
 
   user-select: none;
 }
+
+// .winning-message {
+//   display: none;
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   font-size: 5rem;
+//   flex-direction: column;
+// }
+
+// .winning-message button {
+//   display: none;
+//   font-size: 3rem;
+//   background-color: white;
+//   border: 1px solid black;
+//   padding: .25em .5em;
+// }
+
+// .winning-message button:hover {
+//   background-color: black;
+//   color: white;
+//   border-color: white;
+// }
+
+// .winning-message.show {
+//   display: flex;
+// }
 // body
 //  {
 //    background-color: green;
