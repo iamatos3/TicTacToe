@@ -7,6 +7,7 @@ This tic tac toe game project focuses on the following topics which were covered
 <li>Authentication, Sass, Bootstrap
 
 ## Wireframe
+![Screen Shot 2021-10-08 at 10 37 31 AM](https://user-images.githubusercontent.com/88846920/138191920-626c170c-1c4e-4e2f-a64f-2e24e197ad07.png)
 
 
 ## User Stories Covered
@@ -26,9 +27,12 @@ Please fork this repo and run the following commands to get started
 
 ## Deployed Website
 
-[Tic Tac Toe by Ian Matos]('https://iamatos3.github.io/tictactoe/')
+[Tic Tac Toe by Ian Matos](https://iamatos3.github.io/tictactoe/)
 
 ## Deployed Application
+![Screen Shot 2021-10-20 at 8 24 53 PM](https://user-images.githubusercontent.com/88846920/138191854-0fc44629-7f95-4a45-a55a-fdb16e711e5b.png)
+![Screen Shot 2021-10-20 at 8 26 58 PM](https://user-images.githubusercontent.com/88846920/138191860-5f20b025-e0a2-4647-aa16-71e2e036d89f.png)
+![Screen Shot 2021-10-20 at 8 27 10 PM](https://user-images.githubusercontent.com/88846920/138191870-11eb8046-c93d-49c9-9e7e-9f052a75ee9c.png)
 
 
 ## Project Requirement Met
