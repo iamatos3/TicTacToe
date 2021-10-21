@@ -35,12 +35,12 @@ Please fork this repo and run the following commands to get started
 ![Screen Shot 2021-10-20 at 8 27 10 PM](https://user-images.githubusercontent.com/88846920/138191870-11eb8046-c93d-49c9-9e7e-9f052a75ee9c.png)
 
 
-## Project Requirement Met
+## Project Requirements Met
 - [X] Hosted and deployed on GitHub Pages, not Github Enterprise.
 - [X] Sharing your work through a git repository hosted on Github.
 - [X] Making frequent, cohesive commits dating back to the **first day** of the project week.
 
-## Application Requirement
+## Application Requirements
 
 - [X] User must be able to sign up
 - [X] User must be able to sign in
@@ -58,7 +58,7 @@ Please fork this repo and run the following commands to get started
 - [X] Display a message to the user after sign in, sign up, and sign out success or failure.
 - [X] Sign in and sign up forms must clear after submit success
 
-## Other Requirement
+## Other Requirements
 
 - [X] **Do not** delete your repository at any time or start over.
 - [X] **Do not** rely on refreshing the page for any functionality.
