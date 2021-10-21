@@ -23,29 +23,39 @@
   </head>
 
   <body>
-    <h1>Tic Tac Toe</h1>
+    <div>
+      <h1>Tic Tac Toe</h1>
+
+      <!-- <button class="sign-up-btn btn btn-primary">Create Account</button>
+      <button class="sign-in-btn btn btn-primary">Sign In</button>
+    </div> -->
+
 
     <section id="before-sign-in">
       <!-- sign-up form-->
       <form id="sign-up" class="border">
         <fieldset>
+          <div class="auth">
           <legend>Sign Up</legend>
           <input type="email" name="credentials[email]" placeholder="Email" required/>
           <input type="password" name="credentials[password]" placeholder="Password" required/>
           <input type="password" name="credentials[password_confirmation]" placeholder="Password Confirmation" required/>
 
           <button class="btn btn-primary">Sign Up</button>
+          </div>
         </fieldset>
       </form>
       <br>
       <!-- sign-in form -->
       <form id="sign-in" class="border">
         <fieldset>
+          <div class="auth">
           <legend>Sign In</legend>
           <input type="email" name="credentials[email]" placeholder="Email" required/>
           <input type="password" name="credentials[password]" placeholder="Password" required/>
 
           <button class="btn btn-primary">Sign In</button>
+          </div>
         </fieldset>
       </form>
     </section>
@@ -55,6 +65,7 @@
        <div id="password-hide">
         <form id="change-password" class="border">
           <fieldset>
+            <div class="auth">
             <legend>Change Password</legend>
             <input
               type="password"
@@ -70,6 +81,7 @@
             />
 
             <button class="btn btn-primary">Change Password</button>
+            </div>
           </fieldset>
         </form>
        </div>

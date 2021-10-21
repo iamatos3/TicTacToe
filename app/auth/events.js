@@ -6,7 +6,6 @@ const ui = require('./ui')
 
 const store = require('../store')
 
-
 // Authorization Functions
 const onSignUp = function (event) {
   event.preventDefault()
@@ -62,6 +61,7 @@ const checkWin = function (currentPlayer, gameBoard) {
       gameBoard[2] === currentPlayer
   ) {
     console.log(currentPlayer, 'Wins!')
+    window.alert(`Player ${currentPlayer} Wins!`);
     store.endGame = true
   } else if (
     gameBoard[0] === currentPlayer &&
@@ -69,59 +69,67 @@ const checkWin = function (currentPlayer, gameBoard) {
     gameBoard[6] === currentPlayer
   ) {
     console.log(currentPlayer, 'Wins!')
+    window.alert(`Player ${currentPlayer} Wins!`);
     store.endGame = true
   } else if (
     gameBoard[0] === currentPlayer &&
     gameBoard[4] === currentPlayer &&
     gameBoard[8] === currentPlayer
   ) {
-    console.log(currentPlayer, "Wins!")
-    store.endGame = true;
+    console.log(currentPlayer, 'Wins!')
+    window.alert(`Player ${currentPlayer} Wins!`);
+    store.endGame = true
   } else if (
     gameBoard[1] === currentPlayer &&
     gameBoard[4] === currentPlayer &&
     gameBoard[7] === currentPlayer
   ) {
-    console.log(currentPlayer, "Wins!")
+    console.log(currentPlayer, 'Wins!')
+    window.alert(`Player ${currentPlayer} Wins!`);
     store.endGame = true
   } else if (
     gameBoard[2] === currentPlayer &&
     gameBoard[5] === currentPlayer &&
     gameBoard[8] === currentPlayer
   ) {
-    console.log(currentPlayer, "Wins!")
-    store.endGame = true;
+    console.log(currentPlayer, 'Wins!')
+    window.alert(`Player ${currentPlayer} Wins!`);
+    store.endGame = true
   } else if (
     gameBoard[2] === currentPlayer &&
     gameBoard[4] === currentPlayer &&
     gameBoard[6] === currentPlayer
   ) {
-    console.log(currentPlayer, "Wins!")
-    store.endGame = true;
+    console.log(currentPlayer, 'Wins!')
+    window.alert(`Player ${currentPlayer} Wins!`);
+    store.endGame = true
   } else if (
     gameBoard[3] === currentPlayer &&
     gameBoard[4] === currentPlayer &&
     gameBoard[5] === currentPlayer
   ) {
-    console.log(currentPlayer, "Wins!")
-    store.endGame = true;
+    console.log(currentPlayer, 'Wins!')
+    window.alert(`Player ${currentPlayer} Wins!`)
+    store.endGame = true
   } else if (
     gameBoard[6] === currentPlayer &&
     gameBoard[7] === currentPlayer &&
     gameBoard[8] === currentPlayer
   ) {
-    console.log(currentPlayer, "Wins!")
+    console.log(currentPlayer, 'Wins!')
+    window.alert(`Player ${currentPlayer} Wins!`)
     store.endGame = true
   } else if (
     !gameBoard.includes("")
   ) {
     console.log('The game is a Draw. Play again!')
+    window.alert('The game is a Draw. Play again!')
     store.endGame = true
   } else {
     console.log('Game is still in play. Keep going!')
     store.endGame = false
-   }
   }
+}
 
 // const winningCombos = [
 //   [0, 1, 2],

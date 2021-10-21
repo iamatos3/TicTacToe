@@ -104,7 +104,6 @@ const onNewGameSuccess = (responseData) => {
   store.currentPlayer = 'X'
   store.gameBoard = ["", "", "", "", "", "", "", "", ""]
 
-
   console.log('responseData is', responseData)
 }
 
