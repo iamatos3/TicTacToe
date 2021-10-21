@@ -35,6 +35,8 @@ const onChangePassword = function (event) {
 
   const form = event.target
   const formData = getFormFields(form)
+  console.log(form)
+  console.log(formData)
 
   api.changePassword(formData)
     .then(ui.changePasswordSuccess)
