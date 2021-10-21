@@ -21,10 +21,10 @@ This tic tac toe game project focuses on the following topics which were covered
 
 Please fork this repo and run the following commands to get started
 
-`npm install`
-`grunt serve`
+- `npm install`
+- `grunt serve`
 
-##Deployed Website
+## Deployed Website
 
 [Tic Tac Toe by Ian Matos]('https://iamatos3.github.io/tictactoe/')
 
