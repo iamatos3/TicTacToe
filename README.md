@@ -1,4 +1,4 @@
-# General Assembly Game Project
+# Tic Tac Toe
 
 This tic tac toe game project focuses on the following topics which were covered in Unit 1: Web fundamentals topics such as
 
